@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Consultation | CA VAIBHAV AND ASSOCIATES</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --primary-color: #1e88e5;
+            --card-bg: #1e1e1e;
+            --header-color: #0d47a1;
+            --footer-bg: #0d47a1;
+        }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+        header {
+            background-color: var(--header-color);
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            margin-left: 1.5rem;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 700px;
+            margin: 4rem auto;
+            background-color: var(--card-bg);
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(255,255,255,0.05);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        input, textarea, select {
+            margin-bottom: 1.5rem;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 8px;
+            background-color: #2a2a2a;
+            color: var(--text-color);
+        }
+        button {
+            background-color: var(--primary-color);
+            padding: 0.9rem;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #1565c0;
+        }
+        footer {
+            background-color: var(--footer-bg);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>CA Firm</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Book a Consultation</h2>
+        <form action="#" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91-XXXXXXXXXX" required>
+
+            <label for="service">Select Service</label>
+            <select id="service" name="service" required>
+                <option value="">-- Select a Service --</option>
+                <option value="Tax Filing">Tax Filing</option>
+                <option value="GST Services">GST Services</option>
+                <option value="Company Incorporation">Company Incorporation</option>
+                <option value="Auditing">Auditing</option>
+                <option value="Financial Advisory">Financial Advisory</option>
+            </select>
+
+            <label for="message">Additional Notes</label>
+            <textarea id="message" name="message" rows="4" placeholder="Let us know your requirements..."></textarea>
+
+            <button type="submit">Submit Request</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 CA Firm. All rights reserved.</p>
+    </footer>
+</body>
+</html>

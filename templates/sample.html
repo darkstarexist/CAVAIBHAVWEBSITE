@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chartered Accountant Firm</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --primary-color: #1e88e5;
+            --header-color: #0d47a1;
+            --card-bg: #1e1e1e;
+            --footer-bg: #0d47a1;
+        }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+        header {
+            background-color: var(--header-color);
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            margin-left: 1.5rem;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1500x500') center/cover no-repeat;
+            color: white;
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+        }
+        .cta-button {
+            margin-top: 1.5rem;
+            padding: 0.8rem 2rem;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .service-card {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255,255,255,0.05);
+            width: 280px;
+        }
+        footer {
+            background-color: var(--footer-bg);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>CA VAIBHAV AND ASSOCIATES</h2>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Expert Accounting & Tax Solutions</h1>
+        <p>Helping individuals and businesses make smarter financial decisions.</p>
+        <a href="{{ url_for('consult') }}">
+            <button class="cta-button">Book a Consultation</button>
+        </a>
+    </section>
+
+    <section class="section" id="about">
+        <h2>About Us</h2>
+        <p>We are a team of experienced Chartered Accountants offering professional services in taxation, auditing, and financial advisory.</p>
+    </section>
+
+    <section class="section" id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>Tax Filing</h3>
+                <p>Personal and business tax filing services.</p>
+            </div>
+            <div class="service-card">
+                <h3>GST Services</h3>
+                <p>Registration, filing and compliance support.</p>
+            </div>
+            <div class="service-card">
+                <h3>Company Incorporation</h3>
+                <p>Start your business with expert legal and financial guidance.</p>
+            </div>
+            <div class="service-card">
+                <h3>Auditing</h3>
+                <p>Statutory audits and internal audit services.</p>
+            </div>
+            <div class="service-card">
+                <h3>Financial Advisory</h3>
+                <p>Plan your finances smartly with expert advice.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <p>“Highly professional and knowledgeable team. Made our tax filing seamless!” – Client A</p>
+        <p>“Excellent service with timely updates and great support.” – Client B</p>
+    </section>
+
+    <section class="section" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@cafirm.com | Phone: +91-99999-00000</p>
+        <p>Office Address: 123, Finance Street, Your City</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 CA Firm. All rights reserved.</p>
+    </footer>
+</body>
+</html>
