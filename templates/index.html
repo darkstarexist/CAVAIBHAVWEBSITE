@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VAIBHAV SINGH & ASSOCIATES</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <header class="fade-slide-container">
+        <h2 class="fade-slide-box delay-1 title">CA VAIBHAV & ASSOCIATES</h2>
+        <nav class="fade-slide-box delay-2">
+            <a href="/about">About</a>
+            <a href="#services">Services</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="section hero-section fade-slide-container">
+        <div class="hero-content fade-slide-box delay-1">
+          <h1>Expert Accounting & Tax Solutions</h1>
+          <p>Helping individuals and businesses make smarter financial decisions.</p>
+          <a href="{{ url_for('consult') }}">
+            <button class="cta-button">Book a Consultation</button>
+          </a>
+        </div>
+      </section>
+      
+    
+    <section class="section" id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>Tax Filing</h3>
+                <p>Personal and business tax filing services.</p>
+            </div>
+            <div class="service-card">
+                <h3>GST Services</h3>
+                <p>Registration, filing and compliance support.</p>
+            </div>
+            <div class="service-card">
+                <h3>Company Incorporation</h3>
+                <p>Start your business with expert legal and financial guidance.</p>
+            </div>
+            <div class="service-card">
+                <h3>Auditing</h3>
+                <p>Statutory audits and internal audit services.</p>
+            </div>
+            <div class="service-card">
+                <h3>Financial Advisory</h3>
+                <p>Plan your finances smartly with expert advice.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <p>“Highly professional and knowledgeable team. Made our tax filing seamless!” – Client A</p>
+        <p>“Excellent service with timely updates and great support.” – Client B</p>
+    </section>
+
+    <section class="section" id="hire">
+        <h2>Hire Us</h2>
+        <p style="text-align: center; max-width: 600px; margin: 0 auto 2rem; color: #ccc;">
+            Ready to elevate your financial operations? Fill out the form below, and let our experts handle the rest.
+        </p>
+        <div class="hire-form-container">
+            <form class="hire-form" action="/hire" method="post">
+                <input type="text" name="name" placeholder="Your Full Name" required />
+                <input type="email" name="email" placeholder="Your Email Address" required />
+                <input type="text" name="phone" placeholder="Your Phone Number" required />
+                <textarea name="message" placeholder="Tell us what services you’re looking for..." required></textarea>
+                <button type="submit" class="cta-button">Submit Request</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: ca.vaibhav43@gmail.com | Phone: +91-7870256079</p>
+        <p>Office Address: Node-1, Bodhgaya, Gaya, Bihar</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 VaibhavSingh & Associates. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
